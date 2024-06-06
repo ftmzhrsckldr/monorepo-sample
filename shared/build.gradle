@@ -1,5 +1,5 @@
 apply plugin: 'java-library'
 
 dependencies {
-    // Define any shared dependencies here
+    implementation project(':app')
 }
