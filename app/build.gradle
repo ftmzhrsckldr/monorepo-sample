@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.example.app"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+    flavorDimensions "default"
+    productFlavors {
+        app1 {
+            dimension "default"
+            applicationId "com.example.app1"
+        }
+        app2 {
+            dimension "default"
+            applicationId "com.example.app2"
+        }
+    }
+}
+
+dependencies {
+    implementation project(':shared')
+}
